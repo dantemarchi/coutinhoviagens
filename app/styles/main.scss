@@ -1,0 +1,23 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+// ICONS
+@import "bower_components/components-font-awesome/scss/font-awesome.scss";
+// MATERIAL COLORS
+@import "bower_components/material-colors/dist/colors.scss";
+// MIXINS
+@import "_mixins.scss";
+// VARIABLES
+@import "_variables.scss";
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+// 52W STYLES
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 60px;
+  @include bg-body;
+}
