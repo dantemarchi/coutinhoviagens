@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "~4.0.0-alpha.6",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
     "components-font-awesome": "^4.7.0",
     "material-colors": "1.2.0",
     "Sortable": "sortablejs#^1.5.1"

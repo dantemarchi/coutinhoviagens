@@ -1,0 +1,147 @@
+// FONT SIZE
+
+
+//  RADIUS
+@mixin radius-0 {
+  border: {
+    radius: 0px;
+  }
+}
+
+@mixin radius-3 {
+  border: {
+    radius: 3px;
+  }
+}
+
+@mixin radius-0-3 {
+  border: {
+    radius: 0px 0px 3px 3px;
+  }
+}
+
+@mixin radius-3-0 {
+  border: {
+    radius: 3px 3px 0px 0px ;
+  }
+}
+
+@mixin radius-6 {
+  border: {
+    radius: 6px;
+  }
+}
+
+@mixin radius-0-6 {
+  border: {
+    radius: 0px 0px 6px 6px;
+  }
+}
+
+@mixin shadow {
+  box: {
+    shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// BACKGROUNDS IMAGES
+@mixin bg-body {
+  background: {
+    color: $md-grey-100;
+    image: url(../images/bg-white.png);
+  }
+}
+
+@mixin bg-header {
+  background: {
+    color: $nexus-blue;
+    image: url(../images/bg-black.png);
+  }
+}
+
+@mixin logo {
+  background: {
+    image: url(../images/nexus-logo.png);
+  }
+}
+
+@mixin rarolabs {
+  background: {
+    image: url(../images/rarolabs.png);
+  }
+}
+
+// TABLE
+@mixin text-thead {
+  font: {
+    size: 0.7em;
+    weight: 500;
+  }
+  text: {
+    transform: uppercase;
+  }
+  color: $md-grey-600;
+}
+
+@mixin text-tbody {
+  font: {
+    size: 0.8em;
+    weight: 400;
+  }
+  color: $md-grey-500;
+}
+
+// NAV
+@mixin nav ($active_color, $nav_link_size, $nav_link_padding, $nav_link_border_color, $nav_link_border_width, $link_color, $dropdown_color, $dropdown_active_color, $dropdown_bgcolor, $dropdown_link_color, $dropdown_link_bgcolor) {
+  ul {
+    &.nav,
+    &.nav-tabs {
+      li {
+        &.nav-item {
+          a {
+            &.nav-link {
+              &.active,
+              &:hover {
+                color: $active_color;
+                border: {
+                  color: $nav_link_border_color;
+                  bottom-width: $nav_link_border_width;
+                }
+              }
+              padding: $nav_link_padding;
+              font: {
+                size: $nav_link_size;
+              }
+              text: {
+                transform: uppercase;
+              }
+              color: $link_color;
+            }
+          }
+          .dropdown-menu {
+            a {
+              &:hover {
+                background: {
+                  color: $dropdown_color;
+                }
+              }
+              &.active,
+              &:active {
+                color: $dropdown_active_color;
+                background: {
+                  color: $dropdown_bgcolor;
+                }
+              }
+              color: $dropdown_link_color;
+            }
+            background: {
+              color: $dropdown_link_bgcolor;
+            }
+            border: 0;
+            @include shadow;
+          }
+        }
+      }
+    }
+  }
+}
