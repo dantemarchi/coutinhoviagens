@@ -1,5 +1,5 @@
 // FONTS
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 // ICONS
 @import "bower_components/components-font-awesome/scss/font-awesome.scss";
 // MATERIAL COLORS
@@ -70,18 +70,64 @@ h1 {
 
 /* INICIO */
 #section0 {
-	.buy-ticket {
-		display: block !important;
-		border-radius: 3px;
-		background: #FFFFFF;
-		color: #005CA0;
+	h1 {
+		font: {
+			size: 8em;
+			weight: 600;
+		}
+		text: {
+			shadow: 2px 2px 10px rgba(0,0,0,0.3);
+		}
+		color: $md-white;
 	}
-
-	.buy-ticket,
-	.input-field {
-		display: initial;
-		border-bottom: 1px solid transparent;
-		border-right: 1px solid  #CCCCCC;
+	p {
+		font: {
+			size: 1.5em;
+			weight: 300;
+		}
+		text: {
+			shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+		color: $md-white;
+	}
+	.title {
+		margin-top: -500px;
+	}
+	.box {
+		&-white {
+			background: {
+				color: $md-white;
+			}
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+	}
+	.ida {
+		.custom-control-description {
+		  margin-top: 4px;
+		}
+		font: {
+			size: 0.7em;
+			weight: 600;
+		}
+		text-transform: uppercase;
+		color: $md-white;
+		background: {
+			color: $md-pink-600;
+		}
+		position: absolute;
+    top: 46px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	}
+	.form-control {
+		font: {
+			size: 0.7em;
+			weight: 600;
+		}
+		padding: {
+			top: 0.8rem;
+		}
+		text-transform: uppercase;
+		border: 0;
 	}
 }
 
