@@ -19,59 +19,224 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <link rel="stylesheet" type="text/css" href="/bower_components/fullpage.js/jquery.fullPage.css" />
     
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
   </head>
   <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="container-fluid no-gutters no-padding">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2" class="active"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item">
-            <img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15b926f2191%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15b926f2191%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15b926f2193%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15b926f2193%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15b926f2194%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15b926f2194%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <div id="fullpage">
+      <!-- INICIO -->
+      <div class="section" id="section0">
+        <!-- SLIDE -->
+        <div class="slide" id="slide1" data-anchor="slide1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center mb-5">
+                <h1>Paris</h1>
+                <p>Conhecer Paris nunca foi tão barato</p>
+              </div>
+              <div class="col-md-12">
+                
+              </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="slide" id="slide2" data-anchor="slide2">
+          <h1>Sidney</h1>
+        </div>
+        <div class="slide" id="slide3" data-anchor="slide2">
+          <h1>Alemanha</h1>
+        </div>
       </div>
-    </div>
+      <!-- SOBRE -->
+      <div class="section " id="section1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mb-5">
+              <h1>Deixe as pesquisas com a gente!</h1>
+            </div>
+            <div class="col-md-12 text-center mb-5">
+              <p>Antes de buscar em nosso sistema, pesquisamos sua passagem diretamente nas companhias aéreas. Com o resultado em mãos, fazemos o possível para conseguir uma oferta mais interessante para você. Se o nosso preço não for o melhor, indicamos opções mais interessantes para você realizar sua compra direto da companhia -  e sem custo algum pela consultoria. Solicite sua cotação sem compromisso.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img src="images/icon01.png" class="float-left mr-3 mb-3">
+              <p class="text-left d-flex mt-3">
+              Informe para onde e quando quer ir
+              </p>
+            </div>
+            <div class="col-md-5 offset-md-2">
+              <img src="images/icon02.png" class="float-left mr-3 mb-3">
+              <p class="text-left d-flex mt-3">
+              Converse com nosso agente e escolha as passagens com melhor custo-benefício.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img src="images/icon03.png" class="float-left mr-3 mb-3">
+              <p class="text-left d-flex mt-3">
+              Preencha os dados dos passageiros e realize o pagamento
+              </p>
+            </div>
+            <div class="col-md-5 offset-md-2">
+              <img src="images/icon04.png" class="float-left mr-3 mb-3">
+              <p class="text-left d-flex mt-3">
+              Receba o(s) bilhete(s) e conte com nosso auxílio antes e durante sua viagem!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PROMOS -->
+      <div class="section" id="section2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mb-5">
+              <h1>Promoções</h1>
+              <p>Destinos com preços em destaque</p>
+            </div>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="http://cdn1.guiadaviagem.com.br/wp-content/uploads/2013/07/coliseu-roma.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Roma</h4>
+                    <p class="card-text">Passagem aéria e hospedagem em hotel 4 estrelas para1 adulto.</p>
+                    <p class="price">
+                    <span class="small">IDA E VOLTA</span>
+                    $ 1650,00
+                    </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="http://www.kevinandamanda.com/whatsnew/wp-content/uploads/2014/09/amsterdam-2014-04.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Amsterdam</h4>
+                    <p class="card-text">Passagem aéria e hospedagem em hotel 4 estrelas para1 adulto.</p>
+                    <p class="price">
+                    <span class="small">IDA E VOLTA</span>
+                    $ 1650,00
+                    </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="http://chiccollection.com/wp-content/uploads/2015/07/unseen-attractions-in-tokyo.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Tokyo</h4>
+                    <p class="card-text">Passagem aéria e hospedagem em hotel 4 estrelas para1 adulto.</p>
+                    <p class="price">
+                    <span class="small">IDA E VOLTA</span>
+                    $ 1650,00
+                    </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+      <!-- DEPOIMENTOS -->
+      <div class="section" id="section3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mb-5">
+              <h1>Depoimentos</h1>
+              <p>Como é viajar com a Coutinho Viagens?</p>
+            </div>
+            <div class="col-md-4 mb-5">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg" class="rounded-circle float-left mr-3 mb-3">
+              <p class="text-left ">
+              A viagem foi muito tranquila, fui para Amsterdã e foi inesquecível, além do preço espetacular, eles me orientaram na ida e volta, e já compre a próxima!<br>
+              <span class="small d-flex mt-3">Dante Marchi <br>Julho 2016</span>
+              </p>
+            </div>
+            <div class="col-md-4 mb-5">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" class="rounded-circle float-left mr-3 mb-3">
+              <p class="text-left ">
+              A viagem foi muito tranquila, fui para Amsterdã e foi inesquecível, além do preço espetacular, eles me orientaram na ida e volta, e já compre a próxima!<br>
+              <span class="small d-flex mt-3">Dante Marchi <br>Julho 2016</span>
+              </p>
+            </div>
+            <div class="col-md-4 mb-5">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/guiiipontes/128.jpg" class="rounded-circle float-left mr-3 mb-3">
+              <p class="text-left ">
+              A viagem foi muito tranquila, fui para Amsterdã e foi inesquecível, além do preço espetacular, eles me orientaram na ida e volta, e já compre a próxima!<br>
+              <span class="small d-flex mt-3">Dante Marchi <br>Julho 2016</span>
+              </p>
+            </div>
+            <div class="col-md-4 mb-5">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg" class="rounded-circle float-left mr-3 mb-3">
+              <p class="text-left ">
+              A viagem foi muito tranquila, fui para Amsterdã e foi inesquecível, além do preço espetacular, eles me orientaram na ida e volta, e já compre a próxima!<br>
+              <span class="small d-flex mt-3">Dante Marchi <br>Julho 2016</span>
+              </p>
+            </div>
+            <div class="col-md-4 mb-5">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/vladzima/128.jpg" class="rounded-circle float-left mr-3 mb-3">
+              <p class="text-left ">
+              A viagem foi muito tranquila, fui para Amsterdã e foi inesquecível, além do preço espetacular, eles me orientaram na ida e volta, e já compre a próxima!<br>
+              <span class="small d-flex mt-3">Dante Marchi <br>Julho 2016</span>
+              </p>
+            </div>
+            <div class="col-md-4 mb-5">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg" class="rounded-circle float-left mr-3 mb-3">
+              <p class="text-left ">
+              A viagem foi muito tranquila, fui para Amsterdã e foi inesquecível, além do preço espetacular, eles me orientaram na ida e volta, e já compre a próxima!<br>
+              <span class="small d-flex mt-3">Dante Marchi <br>Julho 2016</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RODAPE -->
+      <div class="section fp-auto-height" id="section4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="politica-troca.html">Política de Trocas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="termos-de-uso.html">Termos de Uso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cotacao.html">Cotação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -89,9 +254,7 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/tether/dist/js/tether.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/material-colors/dist/colors.js"></script>
-    <script src="/bower_components/Sortable/Sortable.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -99,14 +262,12 @@
     <script src="/bower_components/bootstrap/js/dist/util.js"></script>
     <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
     <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
     <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
     <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
     <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+    <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->

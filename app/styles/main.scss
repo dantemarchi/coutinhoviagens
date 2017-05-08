@@ -11,13 +11,164 @@
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
+
 // 52W STYLES
-html {
-    position: relative;
-    min-height: 100%;
-}
 body {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 60px;
   @include bg-body;
+}
+
+h1 {
+	color: $md-light-blue-800;
+}
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3,
+#section4 {
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+	background-image: url(../images/home-background-01.jpg);
+	padding: 6% 0 0 0;
+}
+#slide2{
+	background-image: url(../images/home-background-02.jpg);
+	padding: 6% 0 0 0;
+}
+#slide3{
+	background-image: url(../images/home-background-03.jpg);
+	padding: 6% 0 0 0;
+}
+
+	/* Overwriting styles for the navigation dots (to place it where we want)
+* --------------------------------------- */
+.fp-slidesNav.bottom{
+	bottom: 25px;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: {
+		color: $md-white !important;;
+	} 
+}
+
+/* INICIO */
+#section0 {
+	.buy-ticket {
+		display: block !important;
+		border-radius: 3px;
+		background: #FFFFFF;
+		color: #005CA0;
+	}
+
+	.buy-ticket,
+	.input-field {
+		display: initial;
+		border-bottom: 1px solid transparent;
+		border-right: 1px solid  #CCCCCC;
+	}
+}
+
+/* SOBRE */
+#section1 {
+	h1 {
+		color: $md-yellow-500;
+	}
+	p {
+		color: $md-white;
+	}
+	background: url(../images/bg-about.png) !important;
+}
+
+/* PROMOS */
+#section2 {
+	.col-md-4 {
+		bottom: -130%;
+	}
+	.card-title {
+		color: $md-light-blue-800;
+	}
+	.price {
+		span {
+			font: {
+				size: 0.8rem;
+			}
+			color: $md-light-blue-800;
+			display: block;
+		}
+		font: {
+			size: 1.5rem;
+		}
+		color: $md-pink-600;
+	}
+}
+
+/* DEPOIMENTOS */
+#section3 {
+	img {
+		border: {
+			color: $md-light-blue-800;
+			width: 3px;
+			style: solid;
+		}
+		background: {
+			color: $md-light-blue-800;
+		}
+	}
+	.col-md-4 {
+		p {
+			font: {
+				size: 0.8rem;
+			}
+			color: $md-grey-600;
+			display: table;
+		}
+	}
+}
+
+/* RODAPE */
+#section4 {
+	ul {
+		&.nav {
+			li {
+				&.nav-item {
+					a {
+						&.nav-link {
+							&.active {
+								color: $md-white;
+							}
+							i {
+								font: {
+									size: 1.3rem;
+								}
+							}
+							font: {
+								size: 0.8rem;
+							}
+							color: $md-grey-200;
+						}
+					}
+				}
+			}
+			padding: {
+				top: 5px;
+			}
+		}
+	}
 }
