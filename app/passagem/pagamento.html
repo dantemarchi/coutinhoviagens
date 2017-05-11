@@ -105,96 +105,73 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 mt-4">
-          <h4>DADOS DO PASSAGEIRO 1</h4>
-          <div class="col-md-12 box-grey rounded mt-4 pt-3 pb-1">
+        <div id="pagar" class="col-md-12 mt-4">
+          <h4>FORMA DE PAGAMENTO</h4>
+          <div class="row">
+            <div class="col-md-4 mt-4 pt-3 pb-1">
+            <label class="custom-control custom-radio">
+              <input id="radio1" name="radio" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Boleto</span>
+            </label>
+            <label class="custom-control custom-radio">
+              <input id="radio2" name="radio" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Cartão de crédito</span>
+            </label>
+          </div>
+          <div class="col-md-8 box-grey rounded mt-4 pt-3 pb-1">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Nome">
+                  <input class="form-control" type="text" placeholder="Nome no cartão">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Ultimo Sobrenome">
+                  <input class="form-control" type="text" placeholder="Número do cartão">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <select class="form-control">
-                    <option>Documento</option>
-                  </select>
+                  <input class="form-control" type="text" placeholder="Vencimento">
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-2">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Ultimo Sobrenome">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Telefone">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Celular">
+                  <input class="form-control" type="text" placeholder="Código">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="E-Mail">
+                  <input class="form-control" type="text" placeholder="CPF">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <h5>PARCELAMENTO</h5>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>1x</option>
+                    <option>2x</option>
+                    <option>3x</option>
+                    <option>4x</option>
+                    <option>5x</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="R$ 2070,00" disabled>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-12 mt-4">
-          <h4>DADOS DO PASSAGEIRO 2</h4>
-          <div class="col-md-12 box-grey rounded mt-4 pt-3 pb-1">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Nome">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Ultimo Sobrenome">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Documento</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Ultimo Sobrenome">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Telefone">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Celular">
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="E-Mail">
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="col-md-4 offset-md-4 mt-4">
-          <a class="btn btn-primary btn-pink btn-lg btn-block" href="termos.html#termos">Próximo</a>
+          <a class="btn btn-primary btn-pink btn-lg btn-block" href="finalizar.html">Finalizar Compra</a>
         </div>
       </div>
     </div>
