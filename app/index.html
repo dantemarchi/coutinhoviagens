@@ -76,7 +76,9 @@
                       </select>
                     </div>
                     <div class="col-md-2">
-                      <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+                      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal">
+                        Buscar
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -134,7 +136,9 @@
                       </select>
                     </div>
                     <div class="col-md-2">
-                      <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+                      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                        Buscar
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -185,7 +189,9 @@
                       </select>
                     </div>
                     <div class="col-md-2">
-                      <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+                      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                        Buscar
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -376,6 +382,67 @@
                   <a class="nav-link" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12 mt-3 mb-4">
+                  <h2 class="d-block">Agora deixa com a gente!</h2>
+                  <h4 class="d-block">Um consultor vai encontrar o melhor preço para você!</h4>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control line" type="text" placeholder="Seu nome">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control line" type="text" placeholder="Seu nome">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input class="form-control line" type="text" placeholder="DDD">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <input class="form-control line" type="text" placeholder="Celular">
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3 mb-3">
+                  <h4>Como você prefere ser atendido?</h4>
+                </div>
+                <div class="col-md-6 mt-3 mb-3">
+                  <label class="custom-control custom-radio">
+                    <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">E-Mail</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">WhatsApp</span>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Quer acrescentar alguma observação sobre seu pedido? (flexibilidade de datas, restrições de horários, aeroporto de preferência, etc.)"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-10 offset-md-1 mb-3">
+                  <button type="button" class="btn btn-primary btn-pink btn-lg btn-block">Enviar</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
