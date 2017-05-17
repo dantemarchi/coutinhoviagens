@@ -450,3 +450,88 @@ input {
 			color: rgb(0, 92, 160);
 		}
   }
+
+@include media-breakpoint-down(xs) { 
+	#section0 {
+		h1 {
+			font-size: 3em;
+		}
+		p {
+			font-size: 1.1em;
+		}
+		.title {
+			margin-top: -120px;
+		}
+		.fp-controlArrow {
+			display: none;
+		}
+	}
+	#section1 {
+		h1 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 0.8em;
+		}
+		img {
+			width: 48px;
+		}
+		.mb-5 {
+			margin-bottom: 2rem !important;
+		}
+	}
+	#section2 {
+		h1 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 0.8em;
+		}
+		.price {
+    	font-size: 1.1rem;
+		}
+		.mb-5 {
+			margin-bottom: 2rem !important;
+		}
+		.btn-primary {
+			font-size: 0.8em;
+		}
+		a {
+			&.nav-link {
+				font-size: 0.6rem;
+			}
+		}
+	}
+	#section3 {
+		img {
+			width: 80px;
+		}
+	}
+	#section4 {
+		a {
+			&.nav-link {
+				font-size: 0.6rem;
+			}
+		}
+	}
+	.box-pink {
+		.price {
+			font: {
+				size: 25px;
+			}
+		}
+   position: initial !important;
+	}
+	.box-green {
+		h2 {
+			font: {
+				size: 25px;
+			}
+		}
+		margin: {
+			top: 1rem;
+			right: 15px;
+			left: 15px;
+		}
+	}
+}

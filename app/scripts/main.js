@@ -8,6 +8,7 @@ $(document).ready(function() {
 		slidesNavigation: true,
 		keyboardScrolling: true,
 		resetSliders: true,
+		scrollOverflow: true,
 
 		afterLoad: function(anchorLink, index){
 			//section 2
